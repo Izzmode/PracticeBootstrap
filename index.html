@@ -30,25 +30,86 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex justify-content-around">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Gondor</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Gondor
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Gondor</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Treewatching </a>
+                </li>
+                <li><a class="dropdown-item" href="#">Sword fighting</a></li>
+                <li><a class="dropdown-item" href="#">Crown a king</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Rohan</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Rohan
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rohan</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Watch red sunrise </a>
+                </li>
+                <li><a class="dropdown-item" href="#">Horseback riding</a></li>
+                <li><a class="dropdown-item" href="#">Making soup</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Shire</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Shire
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shire</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Gardening </a>
+                </li>
+                <li><a class="dropdown-item" href="#">Drinking</a></li>
+                <li><a class="dropdown-item" href="#">Smoking</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Rivendell</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Mordor
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mordor</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Fighting </a>
+                </li>
+                <li><a class="dropdown-item" href="#">Rock climbing</a></li>
+                <li><a class="dropdown-item" href="#">Hiking</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -94,6 +155,160 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+
+    <div class="row row-md-cols-1 mt-md-2 mx-5">
+      <div class="col mt-2">
+        <div class="card" style="width: 20rem; height: 27rem">
+          <img src="img1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Gondor</h5>
+            <p class="card-text">
+              Below the misty mountains (not THEEEE misty mountain) lies the
+              capital of men - Gondor.
+            </p>
+            <a href="#" class="btn btn-dark">Want to know more? Click here.</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-2">
+        <div class="card" style="width: 20rem; height: 27rem">
+          <img src="img2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Shire</h5>
+            <p class="card-text">
+              In this lovely village you'll find hobbits, ale and weed.
+            </p>
+            <a href="#" class="btn btn-dark">Want to know more? Click here.</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-2">
+        <div class="card" style="width: 20rem; height: 27rem">
+          <img src="img4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mordor</h5>
+            <p class="card-text">
+              Wish to see where it all happened? Now you can visit Mordor! Climp
+              up the steps to Mount Doom and enjoy the view.
+            </p>
+            <a href="#" class="btn btn-dark">Want to know more? Click here.</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-2">
+        <div class="card" style="width: 20rem; height: 27rem">
+          <img src="img5.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Rohan</h5>
+            <p class="card-text">
+              Where to the horselords live? Why, in Rohan of course! Enjoy a
+              full days ride across open land.
+            </p>
+            <a href="#" class="btn btn-dark">Want to know more? Click here.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- accordion -->
+
+    <div class="accordion mt-3" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Accordion Item #1
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is
+            shown by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Accordion Item #2
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Accordion Item #3
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
         </div>
       </div>
     </div>
